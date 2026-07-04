@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhang Junhe - 个人简历</title>
+    <!-- 引入外部 CSS 样式文件 -->
+    <link rel="stylesheet" href="style.css">
+    <!-- 引入 Google Fonts 中文字体（可选，会让文字更好看） -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ====== 导航栏 ====== -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="nav-logo">Zhang Junhe</a>
+            <ul class="nav-links">
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#education">教育背景</a></li>
+                <li><a href="#skills">技能</a></li>
+                <li><a href="#experience">工作经历</a></li>
+                <li><a href="#projects">项目</a></li>
+                <li><a href="#contact">联系我</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ====== 顶部个人信息（Hero 区域）====== -->
+    <header id="home" class="hero">
+        <div class="container">
+            <!--
+            头像占位：如果要加头像，把下面注释去掉，
+            并放一张图片到 images/avatar.jpg
+            <img src="images/avatar.jpg" alt="头像" class="avatar">
+            -->
+            <div class="avatar-placeholder">Z</div>
+            <h1 class="hero-name">Zhang Junhe</h1>
+            <p class="hero-title">前端开发工程师</p>
+            <p class="hero-tagline">热爱技术 · 持续学习 · 专注成长</p>
+            <div class="hero-links">
+                <a href="#contact" class="btn btn-primary">联系我</a>
+                <a href="#projects" class="btn btn-outline">查看项目</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ====== 关于我 ====== -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">关于我</h2>
+            <div class="about-content">
+                <p>
+                    我是一名热爱技术的前端开发工程师，有 X 年的 Web 开发经验。
+                    擅长使用 HTML、CSS 和 JavaScript 构建用户友好的网页应用。
+                    对新技术保持好奇心，喜欢在业余时间做个人项目来提升技能。
+                </p>
+                <p>
+                    我相信持续学习的力量。目前在深入学习 React 框架和 TypeScript，
+                    同时也在探索后端技术，目标是成为一名全栈工程师。
+                </p>
+                <!-- 个人信息列表 -->
+                <ul class="about-info">
+                    <li><span class="info-label">📍 所在地：</span>北京 / 上海 / 你的城市</li>
+                    <li><span class="info-label">📧 邮箱：</span>zhangjunhe@example.com</li>
+                    <li><span class="info-label">📱 电话：</span>138-xxxx-xxxx</li>
+                    <li><span class="info-label">🎂 出生年份：</span>2000 年</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== 教育背景 ====== -->
+    <section id="education" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">教育背景</h2>
+            <div class="timeline">
+                <!-- 每一条教育经历就是一个 timeline-item -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>XX 大学</h3>
+                        <p class="timeline-subtitle">计算机科学与技术 · 本科</p>
+                        <p class="timeline-date">2020 年 9 月 - 2024 年 6 月</p>
+                        <p>主修课程：数据结构、计算机网络、操作系统、Web 前端开发等。</p>
+                    </div>
+                </div>
+                <!--
+                如果你想添加更多教育经历，复制上面的 timeline-item 即可。
+                例如：高中、培训机构、在线课程等。
+                -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== 技能 ====== -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">技能</h2>
+            <div class="skills-grid">
+                <!-- 每个技能卡片 -->
+                <div class="skill-card">
+                    <div class="skill-icon">🌐</div>
+                    <h3>HTML / CSS</h3>
+                    <p>能编写语义化 HTML，熟练使用 Flexbox 和 Grid 布局，了解响应式设计。</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">⚡</div>
+                    <h3>JavaScript</h3>
+                    <p>掌握 ES6+ 语法，了解 DOM 操作、异步编程和基础算法。</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">⚛️</div>
+                    <h3>React</h3>
+                    <p>正在学习中，了解组件化开发思想和基础 Hooks 用法。</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🛠️</div>
+                    <h3>工具</h3>
+                    <p>会用 Git 进行版本管理、VS Code 编辑器、Chrome DevTools 调试。</p>
+                </div>
+            </div>
+
+            <!-- 技能进度条（可选） -->
+            <div class="skill-bars">
+                <div class="skill-bar">
+                    <span class="skill-bar-label">HTML / CSS</span>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" style="width: 85%;">85%</div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <span class="skill-bar-label">JavaScript</span>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" style="width: 65%;">65%</div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <span class="skill-bar-label">React</span>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" style="width: 40%;">40%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== 工作/实习经历 ====== -->
+    <section id="experience" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">工作经历</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>前端开发实习生</h3>
+                        <p class="timeline-subtitle">XX 科技有限公司</p>
+                        <p class="timeline-date">2023 年 7 月 - 2023 年 12 月</p>
+                        <ul>
+                            <li>参与公司官网的页面开发与维护</li>
+                            <li>使用 HTML/CSS/JS 完成了 3 个活动落地页</li>
+                            <li>与后端同事协作调试接口</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--
+                没有工作经历的话可以删掉这条，
+                或者改成「校园经历」「社团活动」等。
+                -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== 项目 ====== -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">项目作品</h2>
+            <div class="projects-grid">
+                <!-- 项目卡片 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <span>🖥️</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>个人简历网站</h3>
+                        <p>你现在看到的这个网站！用纯 HTML + CSS 构建，响应式设计，适合在手机和电脑上浏览。</p>
+                        <div class="project-tags">
+                            <span>HTML</span><span>CSS</span><span>响应式</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 项目卡片 2（占位，以后添加） -->
+                <div class="project-card project-card-empty">
+                    <div class="project-image">
+                        <span>🚧</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>下一个项目</h3>
+                        <p>这里等着放你的下一个项目！学了 JavaScript 之后可以做一个交互小应用。</p>
+                        <div class="project-tags">
+                            <span>待添加</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== 联系我 ====== -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">联系我</h2>
+            <p class="contact-intro">如果你对我的简历感兴趣，欢迎通过以下方式联系我：</p>
+            <div class="contact-grid">
+                <a href="mailto:zhangjunhe@example.com" class="contact-card">
+                    <span class="contact-icon">📧</span>
+                    <h3>邮箱</h3>
+                    <p>zhangjunhe@example.com</p>
+                </a>
+                <a href="https://github.com" target="_blank" class="contact-card">
+                    <span class="contact-icon">💻</span>
+                    <h3>GitHub</h3>
+                    <p>github.com/你的用户名</p>
+                </a>
+                <div class="contact-card">
+                    <span class="contact-icon">📱</span>
+                    <h3>电话</h3>
+                    <p>138-xxxx-xxxx</p>
+                </div>
+                <div class="contact-card">
+                    <span class="contact-icon">💬</span>
+                    <h3>微信</h3>
+                    <p>你的微信号</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== 页脚 ====== -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Zhang Junhe. 保留所有权利。</p>
+            <p class="footer-note">用 ❤️ 和 HTML + CSS 手写构建</p>
+        </div>
+    </footer>
+
+</body>
+</html>
